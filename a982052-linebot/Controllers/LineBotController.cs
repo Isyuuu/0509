@@ -15,16 +15,15 @@ namespace a982052_linebot.Controllers
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly HttpContext _httpContext;
         private readonly LineBotConfig _lineBotConfig;
-        
-        public LineBotController(IServiceProvider serviceProvider, LineBotConfig lineBotConfig)
+
+        public LineBotController(IServiceProvider serviceProvider)
         {
+            
             _httpContextAccessor = serviceProvider.GetRequiredService<IHttpContextAccessor>();
             _httpContext = _httpContextAccessor.HttpContext;
             _lineBotConfig = new LineBotConfig();
-            _lineBotConfig.channelSecret = "27367ec0201bc7431c67f1e7c3b18233";
-            _lineBotConfig.accessToken ="7YaHlqGIMXQALmT//CgJYcSfNIxIH4LtBiOaRnnvyF3VFtdoHlhZx35YyfNc8I72TmpExyALx8vin8xVWAAp6mN1dehIRA67aOXTX2lMFztqo37hdiZVhHleJVW9t20kRJHmMSPKGmx2lKNGaMJ6NAdB04t89/1O/w1cDnyilFU=";
-
-
+            _lineBotConfig.channelSecret = "";
+            _lineBotConfig.accessToken = "";
         }
         
         //完整的路由網址就是 https://xxx/api/linebot/run
@@ -33,7 +32,7 @@ namespace a982052_linebot.Controllers
         {
             try
             {
-                var events = await _httpContext.Request.GetTrailer(this HttpRequest, string)(_lineBotConfig.channelSecret);
+                var events = await _httpContext.Request.GetWebhookEventsAsync(_lineBotConfig.channelSecret);
                 var lineMessagingClient = new LineMessagingClient(_lineBotConfig.accessToken);
                 var lineBotApp = new LineBotApp(lineMessagingClient);
                 await lineBotApp.RunAsync(events);

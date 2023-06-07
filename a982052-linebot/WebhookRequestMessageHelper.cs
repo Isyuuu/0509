@@ -6,9 +6,7 @@ using Newtonsoft.Json;
 
 namespace a982052_linebot;
 
-public class WebhookRequestMessageHelper
-{
-    /*
+/*
 MIT License
 
 Copyright (c) 2017 pierre3
@@ -90,5 +88,4 @@ public static class WebhookRequestMessageHelper
             diff |= (uint)(a[i] ^ b[i]);
         return diff == 0;
     }
-}
 }
