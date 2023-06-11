@@ -23,12 +23,21 @@ public class LineBotApp : WebhookApplication
                 //頻道Id
                 var channelId = ev.Source.Id;
                 //使用者Id
-                var userId = ev.Source.UserId;
-                    
+                var userId = ev.Source.UserId; 
+                
+                var text =((TextEventMessage)ev.Message).Text;
+
+                if (text.Contains("介紹") && text.Contains("甜點"))
+                {
+                    result = new List<ISendMessage>
+                    {
+                        new TextMessage("瑪卡龍（法語：macaron)")
+                    };
+                }
                 //回傳 hellow
                 result = new List<ISendMessage>
                 {
-                    new TextMessage("Hi Hi")
+                    new TextMessage("Hi Hi"+ text)
                 };
             }
                 break;
