@@ -27,8 +27,6 @@ public class LineBotApp : WebhookApplication
                 
                 var text =((TextEventMessage)ev.Message).Text;
 
-                if (text.Contains("介紹") && text.Contains("甜點"))
-            
                 //回傳 hellow
                 result = new List<ISendMessage>
                 {
@@ -41,6 +39,7 @@ public class LineBotApp : WebhookApplication
                         new TextMessage("瑪卡龍（法語：macaron)")
                     };
                 }
+                
             }
                 break;
             
