@@ -28,19 +28,22 @@ public class LineBotApp : WebhookApplication
                 var text =((TextEventMessage)ev.Message).Text;
 
                 if (text.Contains("介紹") && text.Contains("甜點"))
+            
+                //回傳 hellow
+                result = new List<ISendMessage>
+                {
+                    new TextMessage("這是甜點資訊站~ 一起來了解世界各地的美食")
+                };
+                if (text.Contains("介紹") && text.Contains("甜點"))
                 {
                     result = new List<ISendMessage>
                     {
                         new TextMessage("瑪卡龍（法語：macaron)")
                     };
                 }
-                //回傳 hellow
-                result = new List<ISendMessage>
-                {
-                    new TextMessage("這是甜點資訊站~ 一起來了解世界各地的美食")
-                };
             }
                 break;
+            
         }
 
         if (result != null)
