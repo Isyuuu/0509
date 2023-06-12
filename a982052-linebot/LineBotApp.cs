@@ -37,7 +37,7 @@ public class LineBotApp : WebhookApplication
                 //回傳 hellow
                 result = new List<ISendMessage>
                 {
-                    new TextMessage("這是甜點資訊站~ 一起來了解世界各地的美食"+ text)
+                    new TextMessage("這是甜點資訊站~ 一起來了解世界各地的美食")
                 };
             }
                 break;
