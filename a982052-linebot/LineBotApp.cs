@@ -30,13 +30,13 @@ public class LineBotApp : WebhookApplication
                 //回傳 hellow
                 result = new List<ISendMessage>
                 {
-                    new TextMessage("這是甜點資訊站~ 一起來了解世界各地的美食")
+                    new TextMessage("這是甜點資訊站 ~ ~ 一起來了解世界各地的美食!")
                 };
                 if (text.Contains("介紹") && text.Contains("甜點"))
                 {
                     result = new List<ISendMessage>
                     {
-                        new TextMessage("瑪卡龍（法語：macaron)")
+                        new TextMessage("瑪卡龍（法語：macaron)又稱作馬卡龍、法式小圓餅或少女的酥胸，是一種用色彩繽紛絢麗的法國甜點，外殼堅硬但易碎，內餡黏稠扎實，口感奇妙，因為其極度可愛優雅，馬卡龍色也成為了一種時尚配色方案。")
                     };
                 }
                 
