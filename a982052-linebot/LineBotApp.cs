@@ -158,6 +158,83 @@ public class LineBotApp : WebhookApplication
                         new TextMessage("芒果糯米飯（泰語：ข้าวเหนียวมะม่วง），是一種傳統泰國甜點，主要材料為芒果、糯米與椰奶，芒果糯米飯通常在芒果的旺季食用，通常在泰國的夏季，約4-5月之間。。")
                     };
                 }
+                if (text.Contains("介紹越南") && text.Contains("甜點"))
+                {
+                    result = new List<ISendMessage>
+                    {
+                        new TextMessage("九層糕（越南語：Bánh da lợn；tầng mây；bánh da heo） ，又稱「豬皮糕」，是以木薯粉，粘米粉，綠豆餡、芋頭餡或榴槤餡，以及香蘭葉攪拌成的綠色汁與椰奶，成綠白相交的九層糕，是越南的特色小吃。 類似的甜點在東南亞各國飲食糕點中都有存在。 有時會以食用色素取代天然植物在糕點上的顏色。")
+                    };
+                }
+                if (text.Contains("介紹紐西蘭") && text.Contains("甜點"))
+                {
+                    result = new List<ISendMessage>
+                    {
+                        new TextMessage("巴甫洛娃蛋糕（英語：Pavlova cake）或稱百露華蛋糕、帕芙洛娃蛋糕，是一種蛋白酥作為基底的蛋糕，加上打發的鮮奶油與水果作成的甜點。它以蘇聯芭蕾舞演員安娜·巴甫洛娃的名字命名。")
+                    };
+                }
+                if (text.Contains("介紹奧地利") && text.Contains("甜點"))
+                {
+                    result = new List<ISendMessage>
+                    {
+                        new TextMessage("皇帝煎餅（德語：Kaiserschmarrn）是奧地利最著名的甜點之一，自奧匈帝國時代就開始流行。皇帝煎餅也同樣流行於巴伐利亞和匈牙利。傳說法蘭茲·約瑟夫一世非常喜歡皇帝煎餅，因此得名，但這種說法並沒有文獻資料的依據。")
+                    };
+                }
+                if (text.Contains("介紹瑞士") && text.Contains("甜點"))
+                {
+                    result = new List<ISendMessage>
+                    {
+                        new TextMessage("蛋白霜（法語：Meringue）是一種泡沫蛋糕甜點，經常與法國或瑞士烹飪法互相關聯。它的口感清淡，輕快並甘甜。主要通過攪拌蛋白和白糖而製成，蛋白霜也可以根據不同菜色變化而加入塔塔粉，醋和沸騰的糖漿。")
+                    };
+                }
+                if (text.Contains("介紹菲律賓") && text.Contains("甜點"))
+                {
+                    result = new List<ISendMessage>
+                    {
+                        new TextMessage("哈囉哈囉（他加祿語：Halo-halo）是菲律賓的甜點之王。Halo在菲律賓他加祿語中是混合的意思，顧名思義，這款甜品是將各種材料混合而成。 一般使用紫色的香芋雪糕加上刨冰、水果、軟糖、蜜豆、果凍、果醬、煉乳等混合而成。")
+                    };
+                }
+                if (text.Contains("介紹柬埔寨") && text.Contains("甜點"))
+                {
+                    result = new List<ISendMessage>
+                    {
+                        new TextMessage("南瓜布丁（高棉語：សង្យាល្ពៅ）南瓜布丁的做法起源于金邊。南瓜在柬埔寨各地都很受歡迎，是甜味和美味菜餚中的常見成分。南瓜蛋羹通常被保留在特殊場合，被視為一種享受。")
+                    };
+                }
+                if (text.Contains("介紹新加坡") && text.Contains("甜點"))
+                {
+                    result = new List<ISendMessage>
+                    {
+                        new TextMessage("斑蘭蛋糕（英語:Pandan）蛋糕是一種輕便，蓬鬆，綠色的海綿蛋糕，用Pandanus amaryllifolius葉子的汁調味。它也被稱為香蘭雪糕。由於其與印度尼西亞的歷史殖民關係，該蛋糕在印度尼西亞，馬來西亞，新加坡，越南，柬埔寨，尤其是在印度社區中很流行。")
+                    };
+                }
+                if (text.Contains("介紹香港") && text.Contains("甜點"))
+                {
+                    result = new List<ISendMessage>
+                    {
+                        new TextMessage("馬拉糕，又稱馬來糕，是粵式茶樓的一種糕點，是香港及廣東茶樓常見的點心，相傳是英屬香港時期的廚師嘗試仿製英屬馬來亞的一款海綿蛋糕時，卻找不到當地常用的斑蘭葉，於是修改食譜，成功做出顏色金黃、口感鬆軟的糕點，現在被認為是香港的一種古早味蛋糕。馬拉糕是隔水蒸製而成的蛋糕，在酒樓常使用蒸籠盛放及上桌。")
+                    };
+                }
+                if (text.Contains("介紹墨西哥") && text.Contains("甜點"))
+                {
+                    result = new List<ISendMessage>
+                    {
+                        new TextMessage("特蕾斯蛋糕（Tres Leche）亦稱三奶蛋糕，是一種海綿蛋糕。在一些食譜中，牛油蛋糕有3種牛奶，包括淡奶，煉奶和重奶油。沒有使用黃油的特蕾斯蛋糕非常輕，有很多氣泡。")
+                    };
+                }
+                if (text.Contains("介紹加拿大") && text.Contains("甜點"))
+                {
+                    result = new List<ISendMessage>
+                    {
+                        new TextMessage("奶油塔（英語:Butter Tarts）是一種加拿大小型撻類糕點，是典型的加拿大甜點。奶油塔的內餡由黃油、糖、糖漿、雞蛋和乾果組成，這些材料倒進塔皮里，烤到表皮酥脆，內餡半凝固。很多家庭有自己獨特的奶油塔做法，因此不同糕點店做的奶油塔，在餡料和軟硬程度上有很大不同")
+                    };
+                }
+                if (text.Contains("介紹波蘭") && text.Contains("甜點"))
+                {
+                    result = new List<ISendMessage>
+                    {
+                        new TextMessage("酵母蛋糕（波蘭文:Ciasta drożdżowe）波蘭人以大量的酵母來烘烤，有一些老波蘭食譜更建議用多達80個蛋黃來搭配做酵母麵團。甜的酵母蛋糕（babka drożdżowa）是種以圓環型蛋糕烤盤烤成的酵母蛋糕，外型看起來高高的且成中空狀。")
+                    };
+                }
             }
                 
                 break;
